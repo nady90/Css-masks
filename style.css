@@ -1,33 +1,41 @@
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
 
-.container {
-  max-width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
-
-  padding: 30px 50px 0px;
-  background-color: #000;
+body {
+  width: 100%;
 }
 
-h1 {
-  font-size: 80px;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: rgb(14, 197, 136);
+.parallax {
+  width: 100%;
+  height: 150vh;
+
+  background: url("./pyramid.jpg");
+  background-size: cover;
+  position: relative;
 }
 
-img {
-  width: 90vw;
-  height: 50vh;
-  object-fit: cover;
+.masking-div {
+  -webkit-mask: url("./pyrmaid-mask-3.svg");
+  -webkit-mask-size: cover;
 
-  /* -webkit-mask-image: linear-gradient(black, black 50%, rgba(0, 0, 0, 0) 90%); */
-  -webkit-mask-image: url("./mask-snorkel-svgrepo-com.svg");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.headline {
+  font-size: 350px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  position: fixed;
+  top: 20vh;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  width: 100%;
+  height: 200vh;
 }

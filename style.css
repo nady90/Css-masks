@@ -51,7 +51,7 @@ body {
 
   -webkit-mask: url("./camping-mask-2.svg");
   -webkit-mask-size: cover;
-  /* -webkit-mask-position: 50% -200%; */
+  -webkit-mask-position: 50% -200%;
 }
 .camping-mask span {
   color: brown;
@@ -61,7 +61,7 @@ body {
   text-align: center;
 
   position: sticky;
-  top: 20vh;
+  top: 1vh;
 }
 
 .content {
